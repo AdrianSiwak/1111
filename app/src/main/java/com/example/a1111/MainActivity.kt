@@ -97,6 +97,11 @@ class MainActivity : AppCompatActivity() {
         startActivityForResult(intent,REQUEST_CODE_ADD_PERSON)
 
     }
+    fun lepszaAktywnosc(view : View){
+        val intent = Intent(this,ListActivity::class.java)
+        startActivityForResult(intent,REQUEST_CODE_ADD_PERSON)
+
+    }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
